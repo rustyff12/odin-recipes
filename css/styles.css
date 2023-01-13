@@ -191,12 +191,50 @@ footer {
 }
 
 /* ==== Other Pages ==== */
-.container {
-    padding: 1em;
+.content-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
 }
+
+.content-main-image img{
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+.content-main-info {
+    padding: 2rem;
+
+}
+
+.content-main-info h2 {
+    padding-bottom: 2rem;
+}
+
+.content-main-info p {
+    font-size: 1.2rem;
+}
+
 
 .container h2 {
-    color: azure;
+    color: #000;
     text-decoration: underline;
-
+    padding-bottom: 2rem;
+    background-color: var(--color-main);
+    padding: 2rem;
 }
+
+
+.container p, 
+.container li {
+    font-size: 1.2rem;
+}
+
+.container ul,
+.container ol {
+    padding: 1.5rem 3rem;
+}
+
+/* ==== Media Queries ==== */
