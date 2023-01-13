@@ -45,7 +45,7 @@ h2 {
     display: flex;
 }
 
-.navbar img {
+.navbar-logo img {
     width: 10%;
     height: auto;
     padding: 0 1rem;
@@ -88,7 +88,8 @@ h2 {
 
 .introduction-container {
     display: flex;
-    /* border: 2px solid red; */
+    flex-direction: column;
+    align-items: center;
 }
 
 .introduction h2 {
@@ -238,3 +239,16 @@ footer {
 }
 
 /* ==== Media Queries ==== */
+
+@media (max-width: 920px) {
+    .navbar-list {
+        display: none;
+    }
+
+}
+@media (max-width: 800px) {
+    .recipes-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
