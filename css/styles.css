@@ -26,10 +26,14 @@ h2 {
     text-align: center;
 }
 
+:root {
+    --color-main: #464337;
+}
+
 /* ==== Home Page ==== */
 /* ---- Navbar ---- */
 .navbar {
-    background: #464337;
+    background: var(--color-main);
     color: azure;
     padding: 1.25em;
     width: 100%;
@@ -105,7 +109,7 @@ h2 {
 
 /* ---- Recipes ---- */
 .recipes {
-    background-color: #464337;
+    background-color: var(--color-main);
     padding: 2rem;
     color: #fff;
 }
@@ -119,14 +123,26 @@ h2 {
 .recipes-container-item {
     display: flex;
     flex-direction: column;
+}
+
+.recipes-container-item-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.recipes-container img {
+.recipes-container-item-link a {
+    align-self: center;
+    justify-self: center;
+}
+
+.recipes-container-item-link img {
     width: 70%;
     height: auto;
     border: 4px solid black;
     border-radius: 10px;
+    
 }
 
 .recipes h2 {
@@ -135,21 +151,10 @@ h2 {
 
 .recipes-container-item p {
     padding-top: 1rem;
+    text-align: center;
 }
 
-.recipes-container-item a {
-    text-decoration: none;
-}
 
-.recipes-container-item p a:hover {
-    text-decoration: underline;
-    color: blue;
-
-}
-
-.recipes-container-item a:visited {
-    color: #fff;
-}
 
 
 
@@ -171,7 +176,7 @@ h2 {
 /* ---- Footer ---- */
 
 footer {
-    background-color: #464337;
+    background-color: var(--color-main);
     padding: 2rem;
     display: flex;
     justify-content: center;
