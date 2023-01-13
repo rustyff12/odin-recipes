@@ -3,21 +3,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ---- Global ---- */
-header {
-    background-color: #464337;
-    color: azure;
-    padding: 1.25em;
-    width: 100%;
-}
-
 h1 {
     font-size: 3rem;
     text-align: center;
@@ -28,34 +26,166 @@ h2 {
     text-align: center;
 }
 
-/* ---- Home Page ---- */
-
-
-/* ---- Menu ---- */
-.menu {
-    padding: 2rem;
+/* ==== Home Page ==== */
+/* ---- Navbar ---- */
+.navbar {
+    background: #464337;
+    color: azure;
+    padding: 1.25em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.menu-container {
+.navbar-logo {
+    display: flex;
+}
+
+.navbar img {
+    width: 10%;
+    height: auto;
+    padding: 0 1rem;
+    flex-shrink: 0;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list ul {
+    display: flex;
+}
+
+.navbar-list li {
+    list-style-type: none;
+}
+
+.navbar-list a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem ;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.navbar-list a:hover {
+    color: red;
+}
+
+
+
+/* ---- Intro ---- */
+.introduction {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction-container {
+    display: flex;
+    /* border: 2px solid red; */
+}
+
+.introduction h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.introduction-container p {
+    font-size: 1.5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.introduction-container img {
+    width: 20%;
+    height: auto;
+}
+
+/* ---- Recipes ---- */
+.recipes {
+    background-color: #464337;
+    padding: 2rem;
+    color: #fff;
+}
+
+
+.recipes-container {
     display: flex;
     gap: 20px;
 }
 
-.menu-container-item {
+.recipes-container-item {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.menu-container img {
+.recipes-container img {
     width: 70%;
     height: auto;
     border: 4px solid black;
     border-radius: 10px;
 }
 
+.recipes h2 {
+    padding-bottom: 3rem;
+}
 
-/* ---- Other Pages ---- */
+.recipes-container-item p {
+    padding-top: 1rem;
+}
+
+.recipes-container-item a {
+    text-decoration: none;
+}
+
+.recipes-container-item p a:hover {
+    text-decoration: underline;
+    color: blue;
+
+}
+
+.recipes-container-item a:visited {
+    color: #fff;
+}
+
+
+
+/* ---- Odin ---- */
+.odin {
+    padding: 5rem 2rem;
+}
+
+.odin h2 {
+    padding-bottom: 3rem;
+}
+
+.odin p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+
+/* ---- Footer ---- */
+
+footer {
+    background-color: #464337;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    font-size: 1.5rem;
+}
+
+.footer p a {
+    color: black;
+}
+
+/* ==== Other Pages ==== */
 .container {
     padding: 1em;
 }
