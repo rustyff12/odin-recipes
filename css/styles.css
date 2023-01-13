@@ -199,10 +199,18 @@ footer {
     align-items: center;
     padding-top: 2rem;
 }
-
-.content-main-image img{
+.content-main-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-main-image img {
+    width: 70%;
+    height: auto;
     border: 4px solid black;
     border-radius: 10px;
+    /* align-self: center; */
+    /* justify-self: center; */
 }
 
 .content-main-info {
